@@ -14,6 +14,7 @@ const io = new Server(httpServer, {
   cors: {
     origin: "*", // Allow all origins (you can restrict to specific domain)
     methods: ["GET", "POST"],
+    credentials: true,
   },
 });
 
